@@ -4,15 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONÓCENOS | DGSGM</title>
+    <title>Dirección General de Servicios Generales y Movilidad</title>
     <link href="CSS/estilos.css" rel="stylesheet" type="text/css">
     <link href="CSS/font.css" rel="stylesheet" type="text/css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="JS/arriba.js"></script>
+    <style>
+        img{
+            max-width: 100%;
+        }
+    </style>
 </head>
 <body>
     <span class="ir-arriba icon-arriba"></span>
-    <br><br><br>
+    <header class="main-header">
+
+        <div class="container container--flex">
+            
+            <div class="logo-container column column--50">
+                <br/><br/>
+                    <a href="https://www.unam.mx/" target="_blank">
+                        <img src="img/unam.png" alt="" width="300">
+                    </a>
+                <br/><br/>
+            </div>
+
+            <div class="logo-container column column--50">
+                    <br/><br/>
+                    <a href="http://www.serviciosalacomunidad.unam.mx/" target="_blank">
+                        <div class="v-line"><img src="img/SPASU.png" alt="" width="80"></div>
+                    </a>
+                    <a href="./index.html">
+                        <div class="dgsgm"><img src="img/dgsgm.png" alt="" width="200"></div>
+                    </a>
+            </div>
+
+        </div>
+    </header>
     <nav class="main-nav">
         <div class="container container--flex">
             <span class="icon-menu" id="btnmenu"></span>
@@ -25,24 +53,25 @@
         </div>
     </nav>
 
-    <section class="banner">
-        <img src="img/cu.jpg" alt="" class="banner__img">
-        <div class="banner__content">
-            <br>Conócenos<br>
+    <section class="banner_index">
+        <img src="img/fondo11.jpg" alt="" class="banner__img">
+        <div class="banner_contind">
+            <h1 class="main__tittle">Bienvenidos</h1>
+            <p class="main__cnt">Las oficinas DGSGM se encuentran ubicadas en el Antiguo Edificio de Posgrado, segundo piso, acceso oriente.</p>
         </div>
-    </section>                
+    </section>             
     <main class="main">
-        <div align="center">
-            <br><br>
+        <div class="container" align="justify">
+            <br/><br/>
             <section class="group group--color">
                 <div class="container">
                     <h2 class="main__tittle">Misión</h2>
                 </div>
             </section>
-                <p>La Dirección General de Servicios Generales y Movilidad promueve las acciones necesarias para la Implantación del Plan Integral de Movilidad en 
-                    Ciudad Universitaria y en los planteles del Bachillerato.<br><br>Los Estacionamientos Controlados, PUMABUS, BICIPUMA y Archivo General, amplían 
-                    su cobertura con el objetivo de optimizar el desarrollo de las funciones sustantivas y administrativas de la Comunidad <br>Universitaria. Lo cual, 
-                    genera mejores prácticas de movilidad y respeto del patrimonio universitario. <br><br>De forma tal, que la Innovación y la Mejora Continua, son una constante 
+                <p class="main__cnt">La Dirección General de Servicios Generales y Movilidad promueve las acciones necesarias para la Implantación del Plan Integral de Movilidad en 
+                    Ciudad Universitaria y en los planteles del Bachillerato.<br/><br/>Los Estacionamientos Controlados, PUMABUS, BICIPUMA y Archivo General, amplían 
+                    su cobertura con el objetivo de optimizar el desarrollo de las funciones sustantivas y administrativas de la Comunidad Universitaria. Lo cual, 
+                    genera mejores prácticas de movilidad y respeto del patrimonio universitario. <br/><br/>De forma tal, que la Innovación y la Mejora Continua, son una constante 
                     de calidad en cada servicio brindado hacia la Comunidad Universitaria a través de la DGSGM.
                 </p>
             
@@ -51,7 +80,7 @@
                     <h2 class="main__tittle">Objetivos</h2>
                 </div>
             </section>
-                <p>Ampliar la cobertura de los servicios, así como procurar la mejora continua de la calidad en la prestación de cada uno de los servicios brindados a través de la 
+                <p class="main__cnt">Ampliar la cobertura de los servicios, así como procurar la mejora continua de la calidad en la prestación de cada uno de los servicios brindados a través de la 
                     Dirección General de Servicios Generales y Movilidad.</p>
 
             <section class="group group--color">
@@ -59,41 +88,45 @@
                     <h2 class="main__tittle">Funciones</h2>
                 </div>
             </section>
-                <p>Generar las estrategias que permiten el control del tráfico vehicular, los servicios de Pumabús y Bicipuma, así como el correcto funcionamiento de los estacionamientos 
-                    controlados.<br><br>Asimismo tiene bajo su responsabilidad el Archivo General de la UNAM y los servicios que éste presta a la comunidad de la máxima casa de estudios.</p>
-                <a href="">Conoce los datos</a>
+                <p class="main__cnt">Generar las estrategias que permiten el control del tráfico vehicular, los servicios de Pumabús y Bicipuma, así como el correcto funcionamiento de los estacionamientos 
+                    controlados.<br/>Asimismo tiene bajo su responsabilidad el Archivo General de la UNAM y los servicios que éste presta a la comunidad de la máxima casa de estudios.</p>
         </div>
     </main>
 
     <footer class="main-footer">
+
         <div class="container container--flex">
             <div class="column column--33">
-                <br><br>
-                <h1>DGSGM</h1>
-                    <p>SECRETARÍA DE PREVENCIÓN, ATENCIÓN Y SEGURIDAD UNIVERSITARIA</p>
-                    <p>DIRECCIÓN GENERAL DE SERVICIOS GENERALES Y MOVILIDAD</p><br><br><br>
-                    <div align="center"><img src="img/dgsgm.png" alt="" width="300"></div>
+                <br/><br/>
+                <div>
+                    <h1 class="main__tittle">DGSGM</h1>
+                    <p class="main__cnt">SECRETARÍA DE PREVENCIÓN, ATENCIÓN Y SEGURIDAD UNIVERSITARIA</p>
+                    <p class="main__cnt">DIRECCIÓN GENERAL DE SERVICIOS GENERALES Y MOVILIDAD</p><br/>
+                    <img src="img/unam.png" alt="" width="180"><br/><br/><br/>
+                </div>
+        </div>
+
+            <div class="column column--33">
+                <br/><br/>
+                <h2 class="main__tittle">Contacto</h2>
+                <p class="main__cnt">contactanos@dgsgm.unam.mx</p><br/>
+                <img src="img/dgsgm.png" alt="" width="150">
             </div>
 
             <div class="column column--33">
-                <br><br>
-                <h2>Contacto</h2>
-                    <p>contactanos@dgsgm.unam.mx</p>
-            </div>
-
-            <div class="column column--33">
-                <br><br>
-                <h2>Siguenos en:</h2>
-                    <p>Facebook</p>
-                    <p>Twitter</p>
-                    <p>Instagram</p>
-                    <p>YouTube</p>
+                <br/><br/>
+                <h2 class="main__tittle">Síguenos</h2>
+                <p class="main__cnt">Facebook</p>
+                <p class="main__cnt">Twitter</p>
+                <p class="main__cnt">Instagram</p>
+                <p class="main__cnt">YouTube</p>
             </div>
            
-            <p class="copy"><br><br><br>©2022 Universidad Nacional Autónoma de México, Dirección General de Servicios Generales y Movilidad | 
-                Todos los derechos reservados<br><br><a href="https://www.dgsgm.unam.mx/_files/ugd/4394a8_6ecf87d7be0841d18cb4a0d1d1e0bcaf.pdf" 
-                    style="color: white;">Aviso de privacidad</a></p>
+            <p class="footer-bottom"><br/><br/><br/>©2022 Universidad Nacional Autónoma de México, Dirección General de Servicios Generales y Movilidad | 
+                Todos los derechos reservados<br/><br/><a href="https://www.dgsgm.unam.mx/_files/ugd/4394a8_6ecf87d7be0841d18cb4a0d1d1e0bcaf.pdf" 
+                    style="color: white;" target="_blank">Aviso de privacidad</a></p>
         </div>
+
     </footer>
     <script src="js/menu.js"></script>
 </body>
