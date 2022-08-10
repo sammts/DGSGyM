@@ -147,9 +147,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*-------------------------Estilos del Banner-------------------------*/
-.banner {
+.banner_index {
     margin-top: -55px;
     position: relative;
+}
+
+.banner_other {
+    margin-top: -55px;
+    position: relative;
+}
+
+.banner_index:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+    top: 65%;
+}
+
+.banner_other:before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 30%;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+    top: 65%;
+    left: 40%;
 }
 
 .banner__img {
@@ -157,6 +183,29 @@ h1, h2, h3, h4, h5, h6 {
     height: 800px;
     object-fit: cover;
 }
+
+.banner_contind {
+    width: 80%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.banner_content {
+    width: 80%;
+    color: white;
+    text-align: right;
+    position: absolute;
+    z-index: 1500;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
 
 /*-------------------------Boton de ir arriba-------------------------*/
 .ir-arriba {
@@ -192,10 +241,101 @@ h1, h2, h3, h4, h5, h6 {
 .column--33 {
     width: 32%;
 }
+/*------------------------------Imágenes------------------------------*/
+
+.slide_bic {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide_bic ul {
+    display: flex;
+    padding: 0;
+    width: 900%;
+    animation: cambio1 20s infinite;
+}
+
+.slide_bic li {
+    width: 100%;
+    list-style: none;
+}
+
+.slide_bic img {
+    width: 100%;
+}
+
+@keyframes cambio1 {
+    0% {margin-left: 0;}
+    10%{margin-left: 0;}
+
+    11% {margin-left: -100%;}
+    21%{margin-left: -100%;}
+
+    22% {margin-left: -200%;}
+    32%{margin-left: -200%;}
+
+    33% {margin-left: -300%;}
+    43%{margin-left: -300%;}
+
+    44% {margin-left: -400%;}
+    54%{margin-left: -400%;}
+
+    55% {margin-left: -500%;}
+    65%{margin-left: -500%;}
+
+    66% {margin-left: -600%;}
+    76%{margin-left: -600%;}
+
+    77% {margin-left: -700%;}
+    87%{margin-left: -700%;}
+
+    88% {margin-left: -800%;}
+    100%{margin-left: -800%;}
+}
+
+.slide_ind {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide_ind ul {
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: cambio2 20s infinite;
+}
+
+.slide_ind li {
+    width: 100%;
+    list-style: none;
+}
+
+.slide_ind img {
+    width: 100%;
+}
+
+@keyframes cambio2 {
+    0% {margin-left: 0;}
+    19%{margin-left: 0;}
+
+    20% {margin-left: -100%;}
+    39%{margin-left: -100%;}
+
+    40% {margin-left: -200%;}
+    59%{margin-left: -200%;}
+
+    60% {margin-left: -300%;}
+    79%{margin-left: -300%;}
+
+    80% {margin-left: -400%;}
+    100%{margin-left: -400%;} 
+}
 
 /*-----------------------------Principales-----------------------------*/
 
-.main__title {
+.main__tittle {
     margin: 15px 0;
     font-size: 1.8em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -220,7 +360,7 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
-.group__title {
+.group__tittle {
     font-family: 'Pacifico', cursive;
     text-align: center;
     font-weight: 100;
@@ -317,7 +457,7 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: -240px;
         position: relative;
     }
-    .main__title {
+    .main__tittle {
         font-size: 2.2em;
     }
     .main__about__description{
@@ -335,10 +475,10 @@ h1, h2, h3, h4, h5, h6 {
     .column--50-25 {
         width: 24.5%;
     }
-    .column__title {
+    .column__tittle {
         font-size: 1em;
     }
-    .group__title {
+    .group__tittle {
         font-size: 2.2em;
     }
 }
@@ -388,13 +528,13 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 30px;
         padding: 20px;
     }
-    .main title {
+    .main tittle {
         font-size: 2.3em;
     }
     .main__about__description .column--50:nth-child(2) .column__txt {
         line-height: 45px;
     }
-    .today-special__title {
+    .today-special__tittle {
         font-size: 1.4em;
     }
     .today-special__price {
